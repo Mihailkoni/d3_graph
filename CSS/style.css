@@ -1,0 +1,88 @@
+:root {
+    --main-font-family: "Spot Mono", monospace;
+    --main-background-color: #151419;
+    --main-font-color: #fbfbfb;
+    --main-border-radius: 12px;
+    --main-background-color-input-enabled:#f56f10;
+    --main-background-color-input-disabled: #878787;
+}
+
+form fieldset div div,select {
+    font-family: var(--main-font-family);
+    margin: 3px;
+}
+
+form fieldset {
+    width: fit-content;
+    border-radius: var(--main-border-radius);
+    margin: 10px;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+}
+
+table {
+    border-radius: var(--main-border-radius);
+    margin-top: 5px;
+    width: 100%;
+    border-spacing: 10px;
+}
+
+td, th {
+    
+    padding: 10px;
+    border-radius: var(--main-border-radius);
+}
+
+th {
+    background:steelblue;
+}
+
+tr:nth-child(even) {
+    background: #878787;
+}
+
+tr:nth-child(odd) {
+    background: #262626;
+}
+
+.error {
+    background: darkred;
+    width: fit-content;
+    border-radius: var(--main-border-radius);
+    padding: 5px;
+}
+
+svg {
+    width: 0px;
+    height: 0px;
+}
+svg text {
+    font: 8px var(--main-font-family);
+}
+svg path, line {
+    fill: none;
+    stroke: #333333;
+    width: 1px;
+}
+
+input,select {
+    transition: 0.5s;
+    border-radius: var(--main-border-radius);
+    border: 0;
+    padding: 6px;
+    font-family: var(--main-font-family);
+    margin: 5px;
+    background-color: var(--main-background-color-input-disabled);
+    color: var(--main-font-color);
+}
+
+input:hover,
+select:hover {
+  transition: 0.5s;
+  transform: scale(110%);
+  background-color: #f56f10;
+}
